@@ -34,13 +34,13 @@ struct ExampleStruct
 
 * Enums should be placed in their own explicit namespace - so as not to contaminate the containing namespace with extraneous symbols
  * namespace name is plural - as the container for all of the enum symbols; the namespace name is used to refer to individual enum values as FileAccessFlags::Append rather than just Append
-* enum – used to declare variables; the name is
+* enum â€“ used to declare variables; the name is
  * plural if an enum variable may contain more than one of the enum flags: and cannot share the same name as the encapsulating namespace: FindFileFlags::FindFlags flags
  * singular if the enum values are mutually exclusive, allowing you to declare a variable that is ONE of many enum values: FileAccessFlags::FileMode mode
-* enum member names should be CamelCase, with leading uppercase character; they should NOT be all caps or prefixed with a character indicator like “k_”
-* use a typedef to shorten enum variable declaration – shortening FileAccessFlags::FileModes modes to FileModes modes; enum typedef shares the same name as the enum
+* enum member names should be CamelCase, with leading uppercase character; they should NOT be all caps or prefixed with a character indicator like â€k_â€
+* use a typedef to shorten enum variable declaration â€“ shortening FileAccessFlags::FileModes modes to FileModes modes; enum typedef shares the same name as the enum
 
-Note: When you refer to an enum inside a type, you do not need to specify the name of the enum – which results in the following compiler warning:
+Note: When you refer to an enum inside a type, you do not need to specify the name of the enum â€“ which results in the following compiler warning:
 
 ```
  warning C4482: nonstandard extension used: enum 'enum' used in qualified name
@@ -242,7 +242,7 @@ throw Helium::Exception( "mTracks[AT_ROTATE_X]->isSampled() && mTracks[AT_ROTATE
 
 ## Spacing, Tabs, Newlines, etc.
 
-- Use spaces instead of tab characters.
+- Use Tabs for indentation.
 - Use 4-space indenting.
 - Place curly braces on their own line.
 - Put spaces after open parentheses and before close parentheses.
